@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios tecnológicos integrales: Desarrollo, Cloud, IA, Ciberseguridad, Marketing y más.">
+    <meta name="theme-color" content="#0D0D0D">
+    <title>Servicios | TechNova Solutions</title>
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Fuentes e iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/chat-widget.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="assets/img/logo-icon.png" alt="TechNova" class="logo-icon" onerror="this.style.display='none'">
+            <span class="logo-text">TECH<span class="logo-accent">NOVA</span></span>
+        </a>
+        
+        <button class="menu-toggle" aria-label="Menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            
+            <div class="dropdown">
+                <a href="servicios.html" class="dropdown-toggle active">
+                    Servicios <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-code"></i> Desarrollo</h4>
+                        <a href="#web">Desarrollo Web</a>
+                        <a href="#mobile">Apps Móviles</a>
+                        <a href="#software">Software a Medida</a>
+                        <a href="#erp">ERP y CRM</a>
+                        <a href="#apis">APIs y Microservicios</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-cloud"></i> Cloud</h4>
+                        <a href="#cloud">Computación en la Nube</a>
+                        <a href="#devops">DevOps y CI/CD</a>
+                        <a href="#servers">Servidores y Hosting</a>
+                        <a href="#databases">Bases de Datos</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-shield-alt"></i> Seguridad</h4>
+                        <a href="#cyber">Ciberseguridad</a>
+                        <a href="#pentest">Pentesting</a>
+                        <a href="#backup">Backup y Recuperación</a>
+                        <a href="#monitoring">Monitoreo 24/7</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-robot"></i> IA y Datos</h4>
+                        <a href="#ai">Inteligencia Artificial</a>
+                        <a href="#chatbots">Chatbots</a>
+                        <a href="#bigdata">Big Data</a>
+                        <a href="#bi">Business Intelligence</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-chart-line"></i> Marketing</h4>
+                        <a href="#seo">SEO</a>
+                        <a href="#ads">Publicidad Digital</a>
+                        <a href="#social">Redes Sociales</a>
+                        <a href="#email">Email Marketing</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-cogs"></i> Más</h4>
+                        <a href="contacto.html">Solicitar Servicio →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="nosotros.html">Nosotros</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="contacto.html" class="btn-primary">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero">
+        <h1>Nuestros <span class="gradient-text">Servicios</span></h1>
+        <p>Todo lo que tu empresa necesita para la transformación digital</p>
+    </section>
+
+    <!-- ========== DESARROLLO ========== -->
+    <section id="desarrollo" class="service-category">
+        <div class="category-header">
+            <i class="fas fa-code"></i>
+            <h2>Desarrollo y Software</h2>
+            <p>Construimos soluciones digitales a la medida de tu negocio</p>
+        </div>
+        <div class="services-grid">
+            <div id="web" class="service-card" data-service-id="web">
+                <i class="fas fa-globe"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Sitios corporativos, e-commerce, landing pages y aplicaciones web progresivas (PWA).</p>
+            </div>
+            <div id="mobile" class="service-card" data-service-id="mobile">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Apps Móviles</h3>
+                <p>Aplicaciones nativas e híbridas para iOS y Android con Flutter, React Native y Swift.</p>
+            </div>
+            <div id="software" class="service-card" data-service-id="software">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Software a Medida</h3>
+                <p>Sistemas personalizados que se adaptan exactamente a tus procesos de negocio.</p>
+            </div>
+            <div id="erp" class="service-card" data-service-id="erp">
+                <i class="fas fa-building"></i>
+                <h3>ERP y CRM</h3>
+                <p>Implementación y desarrollo de sistemas de gestión empresarial y relación con clientes.</p>
+            </div>
+            <div id="apis" class="service-card" data-service-id="apis">
+                <i class="fas fa-plug"></i>
+                <h3>APIs y Microservicios</h3>
+                <p>Arquitecturas modernas y escalables para conectar todos tus sistemas.</p>
+            </div>
+            <div id="desktop" class="service-card" data-service-id="desktop">
+                <i class="fas fa-desktop"></i>
+                <h3>Aplicaciones de Escritorio</h3>
+                <p>Software nativo para Windows, macOS y Linux con alto rendimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CLOUD ========== -->
+    <section id="infraestructura" class="service-category">
+        <div class="category-header">
+            <i class="fas fa-cloud"></i>
+            <h2>Infraestructura y Cloud</h2>
+            <p>Escalabilidad, rendimiento y disponibilidad garantizada</p>
+        </div>
+        <div class="services-grid">
+            <div id="cloud" class="service-card" data-service-id="cloud">
+                <i class="fas fa-server"></i>
+                <h3>Computación en la Nube</h3>
+                <p>Migración y gestión en AWS, Azure y Google Cloud Platform.</p>
+            </div>
+            <div id="devops" class="service-card" data-service-id="devops">
+                <i class="fas fa-infinity"></i>
+                <h3>DevOps y CI/CD</h3>
+                <p>Automatización de despliegues, integración continua y monitoreo.</p>
+            </div>
+            <div id="servers" class="service-card" data-service-id="servers">
+                <i class="fas fa-hdd"></i>
+                <h3>Servidores y Hosting</h3>
+                <p>Administración de servidores Linux/Windows y hosting optimizado.</p>
+            </div>
+            <div id="databases" class="service-card" data-service-id="databases">
+                <i class="fas fa-database"></i>
+                <h3>Bases de Datos</h3>
+                <p>Diseño, optimización y administración de SQL y NoSQL.</p>
+            </div>
+            <div id="containers" class="service-card" data-service-id="containers">
+                <i class="fab fa-docker"></i>
+                <h3>Contenedores</h3>
+                <p>Docker y Kubernetes para aplicaciones portables y escalables.</p>
+            </div>
+            <div id="cdn" class="service-card" data-service-id="cdn">
+                <i class="fas fa-network-wired"></i>
+                <h3>CDN y Redes</h3>
+                <p>Distribución global de contenido y optimización de redes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SEGURIDAD ========== -->
+    <section id="seguridad" class="service-category">
+        <div class="category-header">
+            <i class="fas fa-shield-alt"></i>
+            <h2>Ciberseguridad</h2>
+            <p>Protegemos tus datos y sistemas contra cualquier amenaza</p>
+        </div>
+        <div class="services-grid">
+            <div id="cyber" class="service-card" data-service-id="cyber">
+                <i class="fas fa-user-shield"></i>
+                <h3>Ciberseguridad</h3>
+                <p>Auditorías, protección de datos y sistemas de defensa avanzada.</p>
+            </div>
+            <div id="pentest" class="service-card" data-service-id="pentest">
+                <i class="fas fa-bug"></i>
+                <h3>Pentesting</h3>
+                <p>Pruebas de penetración y ethical hacking para encontrar vulnerabilidades.</p>
+            </div>
+            <div id="backup" class="service-card" data-service-id="backup">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Backup y Recuperación</h3>
+                <p>Sistemas de respaldo automáticos y planes de recuperación ante desastres.</p>
+            </div>
+            <div id="gdpr" class="service-card" data-service-id="gdpr">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Protección de Datos</h3>
+                <p>Cumplimiento GDPR, ISO 27001 y normativas de protección de datos.</p>
+            </div>
+            <div id="monitoring" class="service-card" data-service-id="monitoring">
+                <i class="fas fa-eye"></i>
+                <h3>Monitoreo 24/7</h3>
+                <p>Detección de intrusiones y respuesta ante incidentes en tiempo real.</p>
+            </div>
+            <div id="identity" class="service-card" data-service-id="identity">
+                <i class="fas fa-fingerprint"></i>
+                <h3>Identidad y Accesos</h3>
+                <p>Sistemas IAM, autenticación biométrica y control de accesos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== IA Y DATOS ========== -->
+    <section id="inteligencia" class="service-category">
+        <div class="category-header">
+            <i class="fas fa-robot"></i>
+            <h2>Inteligencia Artificial y Datos</h2>
+            <p>El futuro de tu negocio, hoy</p>
+        </div>
+        <div class="services-grid">
+            <div id="ai" class="service-card" data-service-id="ai">
+                <i class="fas fa-brain"></i>
+                <h3>Inteligencia Artificial</h3>
+                <p>Modelos de machine learning personalizados para tu negocio.</p>
+            </div>
+            <div id="chatbots" class="service-card" data-service-id="chatbots">
+                <i class="fas fa-comments"></i>
+                <h3>Chatbots y Asistentes</h3>
+                <p>Asistentes virtuales con IA para atención al cliente 24/7.</p>
+            </div>
+            <div id="bigdata" class="service-card" data-service-id="bigdata">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Big Data</h3>
+                <p>Procesamiento y análisis de grandes volúmenes de datos.</p>
+            </div>
+            <div id="bi" class="service-card" data-service-id="bi">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Business Intelligence</h3>
+                <p>Dashboards interactivos y reportes ejecutivos en tiempo real.</p>
+            </div>
+            <div id="rpa" class="service-card" data-service-id="rpa">
+                <i class="fas fa-robot"></i>
+                <h3>Automatización RPA</h3>
+                <p>Robots de software que automatizan tareas repetitivas.</p>
+            </div>
+            <div id="vision" class="service-card" data-service-id="vision">
+                <i class="fas fa-camera"></i>
+                <h3>Visión por Computadora</h3>
+                <p>Reconocimiento facial, de objetos y análisis de imágenes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MARKETING ========== -->
+    <section id="marketing" class="service-category">
+        <div class="category-header">
+            <i class="fas fa-chart-line"></i>
+            <h2>Marketing Digital</h2>
+            <p>Haz crecer tu negocio en el mundo digital</p>
+        </div>
+        <div class="services-grid">
+            <div id="seo" class="service-card" data-service-id="seo">
+                <i class="fas fa-search"></i>
+                <h3>SEO</h3>
+                <p>Posicionamiento orgánico en Google y motores de búsqueda.</p>
+            </div>
+            <div id="ads" class="service-card" data-service-id="ads">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Publicidad Digital</h3>
+                <p>Campañas en Google Ads, Meta Ads y otras plataformas.</p>
+            </div>
+            <div id="social" class="service-card" data-service-id="social">
+                <i class="fas fa-share-alt"></i>
+                <h3>Redes Sociales</h3>
+                <p>Community management y estrategias de contenido.</p>
+            </div>
+            <div id="email" class="service-card" data-service-id="email">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Marketing</h3>
+                <p>Campañas automatizadas y segmentación inteligente.</p>
+            </div>
+            <div id="analytics" class="service-card" data-service-id="analytics">
+                <i class="fas fa-chart-area"></i>
+                <h3>Analytics</h3>
+                <p>Google Analytics, tracking y medición de resultados.</p>
+            </div>
+            <div id="content" class="service-card" data-service-id="content">
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Content Marketing</h3>
+                <p>Creación de contenido de valor: blogs, videos, infografías.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DISEÑO ========== -->
+    <section id="diseno" class="service-category">
+        <div class="category-header">
+            <i class="fas fa-palette"></i>
+            <h2>Diseño y Experiencia</h2>
+            <p>Interfaces que enamoran y experiencias memorables</p>
+        </div>
+        <div class="services-grid">
+            <div id="uxui" class="service-card" data-service-id="uxui">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>Diseño UX/UI</h3>
+                <p>Interfaces intuitivas y experiencias centradas en el usuario.</p>
+            </div>
+            <div id="branding" class="service-card" data-service-id="branding">
+                <i class="fas fa-fingerprint"></i>
+                <h3>Branding</h3>
+                <p>Identidad visual, logotipos y manuales de marca.</p>
+            </div>
+            <div id="graphic" class="service-card" data-service-id="graphic">
+                <i class="fas fa-image"></i>
+                <h3>Diseño Gráfico</h3>
+                <p>Material publicitario, flyers, banners y más.</p>
+            </div>
+            <div id="motion" class="service-card" data-service-id="motion">
+                <i class="fas fa-film"></i>
+                <h3>Motion Graphics</h3>
+                <p>Animaciones, videos explicativos y motion design.</p>
+            </div>
+            <div id="3d" class="service-card" data-service-id="3d">
+                <i class="fas fa-cube"></i>
+                <h3>Modelado 3D</h3>
+                <p>Modelos 3D, renders y visualizaciones arquitectónicas.</p>
+            </div>
+            <div id="prototype" class="service-card" data-service-id="prototype">
+                <i class="fas fa-drafting-compass"></i>
+                <h3>Prototipado</h3>
+                <p>Wireframes y prototipos interactivos en Figma.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOPORTE ========== -->
+    <section id="soporte" class="service-category">
+        <div class="category-header">
+            <i class="fas fa-headset"></i>
+            <h2>Soporte y Consultoría</h2>
+            <p>Acompañamiento continuo para tu tranquilidad</p>
+        </div>
+        <div class="services-grid">
+            <div id="consulting" class="service-card" data-service-id="consulting">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Consultoría Tecnológica</h3>
+                <p>Asesoría estratégica para la transformación digital de tu empresa.</p>
+            </div>
+            <div id="support" class="service-card" data-service-id="support">
+                <i class="fas fa-tools"></i>
+                <h3>Soporte Técnico</h3>
+                <p>Atención 24/7 y mantenimiento preventivo de sistemas.</p>
+            </div>
+            <div id="maintenance" class="service-card" data-service-id="maintenance">
+                <i class="fas fa-wrench"></i>
+                <h3>Mantenimiento</h3>
+                <p>Actualizaciones, parches de seguridad y optimización continua.</p>
+            </div>
+            <div id="audit" class="service-card" data-service-id="audit">
+                <i class="fas fa-clipboard-check"></i>
+                <h3>Auditoría de Software</h3>
+                <p>Revisión de código, rendimiento y buenas prácticas.</p>
+            </div>
+            <div id="training" class="service-card" data-service-id="training">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Capacitación</h3>
+                <p>Formación de equipos en nuevas tecnologías y metodologías.</p>
+            </div>
+            <div id="transformation" class="service-card" data-service-id="transformation">
+                <i class="fas fa-rocket"></i>
+                <h3>Transformación Digital</h3>
+                <p>Acompañamiento integral en la digitalización de tu negocio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OTROS ========== -->
+    <section id="otros" class="service-category">
+        <div class="category-header">
+            <i class="fas fa-star"></i>
+            <h2>Otros Servicios</h2>
+            <p>Tecnologías emergentes y soluciones especiales</p>
+        </div>
+        <div class="services-grid">
+            <div id="games" class="service-card" data-service-id="games">
+                <i class="fas fa-gamepad"></i>
+                <h3>Videojuegos</h3>
+                <p>Desarrollo de videojuegos 2D y 3D con Unity y Unreal.</p>
+            </div>
+            <div id="vr" class="service-card" data-service-id="vr">
+                <i class="fas fa-vr-cardboard"></i>
+                <h3>VR / AR</h3>
+                <p>Realidad virtual y aumentada para experiencias inmersivas.</p>
+            </div>
+            <div id="blockchain" class="service-card" data-service-id="blockchain">
+                <i class="fas fa-link"></i>
+                <h3>Blockchain y Web3</h3>
+                <p>Smart contracts, NFTs y aplicaciones descentralizadas.</p>
+            </div>
+            <div id="iot" class="service-card" data-service-id="iot">
+                <i class="fas fa-microchip"></i>
+                <h3>IoT</h3>
+                <p>Internet de las Cosas y dispositivos conectados inteligentes.</p>
+            </div>
+            <div id="print3d" class="service-card" data-service-id="print3d">
+                <i class="fas fa-cubes"></i>
+                <h3>Impresión 3D</h3>
+                <p>Diseño y fabricación aditiva de prototipos y piezas.</p>
+            </div>
+            <div id="custom" class="service-card highlight" data-service-id="custom">
+                <i class="fas fa-plus-circle"></i>
+                <h3>¿Otro Servicio?</h3>
+                <p>¿No encuentras lo que buscas? Cuéntanos tu necesidad y lo hacemos realidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+        <h2>¿Listo para empezar?</h2>
+        <p>Cuéntanos tu proyecto y la IA te responderá al instante.</p>
+        <a href="contacto.html" class="btn-primary btn-large">Contactar Ahora</a>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo">
+                    <span class="logo-text">TECH<span class="logo-accent">NOVA</span></span>
+                </div>
+                <p>Soluciones tecnológicas sin límites.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> xxxpurga@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +57 317 498 0521</p>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="https://x.com/Alexander_rzxs" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/breiner-alexander-lb-41378b425" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shh4x" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/alexande_rzzz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechNova Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services-data.js"></script>
+    <script src="js/services-modal.js"></script>
+    <script src="js/ai-api.js"></script>
+    <script src="js/chat-widget.js"></script>
+</body>
+</html>
