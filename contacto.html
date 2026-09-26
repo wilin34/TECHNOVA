@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | TechNova Solutions</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="assets/img/logo-icon.png" alt="TechNova" class="logo-icon" onerror="this.style.display='none'">
+            <span class="logo-text">TECH<span class="logo-accent">NOVA</span></span>
+        </a>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+                <a href="servicios.html" class="dropdown-toggle">Servicios <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-code"></i> Desarrollo</h4>
+                        <a href="servicios.html#web">Desarrollo Web</a>
+                        <a href="servicios.html#mobile">Apps Móviles</a>
+                        <a href="servicios.html#software">Software a Medida</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-cloud"></i> Cloud</h4>
+                        <a href="servicios.html#cloud">Computación en la Nube</a>
+                        <a href="servicios.html#devops">DevOps</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-robot"></i> IA</h4>
+                        <a href="servicios.html#ai">Inteligencia Artificial</a>
+                        <a href="servicios.html#chatbots">Chatbots</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <h4><i class="fas fa-shield-alt"></i> Seguridad</h4>
+                        <a href="servicios.html#cyber">Ciberseguridad</a>
+                        <a href="servicios.html#pentest">Pentesting</a>
+                    </div>
+                </div>
+            </div>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="contacto.html" class="btn-primary active">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Contácta<span class="gradient-text">nos</span></h1>
+        <p>Cuéntanos tu proyecto y nuestra IA te responderá al instante</p>
+    </section>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>contacto@technova.com</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>Teléfono</h4>
+                    <p>+57 300 000 0000</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Ubicación</h4>
+                    <p>Bogotá, Colombia</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h4>Horario</h4>
+                    <p>Lun - Vie: 8am - 6pm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Nombre</label>
+                        <input type="text" id="name" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Teléfono (Opcional)</label>
+                        <input type="tel" id="phone" placeholder="+57 300 000 0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="company"><i class="fas fa-building"></i> Empresa (Opcional)</label>
+                        <input type="text" id="company" placeholder="Nombre de tu empresa">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="service-type"><i class="fas fa-cogs"></i> Servicio de interés</label>
+                    <select id="service-type" required>
+                        <option value="">-- Selecciona un servicio --</option>
+                        <optgroup label="💻 Desarrollo y Software">
+                            <option value="Desarrollo Web">Desarrollo Web</option>
+                            <option value="Apps Móviles">Apps Móviles (iOS/Android)</option>
+                            <option value="Software a Medida">Software a Medida</option>
+                            <option value="Aplicaciones de Escritorio">Aplicaciones de Escritorio</option>
+                            <option value="APIs y Microservicios">APIs y Microservicios</option>
+                            <option value="ERP y CRM">Sistemas ERP y CRM</option>
+                        </optgroup>
+                        <optgroup label="☁️ Infraestructura y Cloud">
+                            <option value="Computación en la Nube">Computación en la Nube</option>
+                            <option value="Migración a la Nube">Migración a la Nube</option>
+                            <option value="DevOps y CI/CD">DevOps y CI/CD</option>
+                            <option value="Servidores y Hosting">Servidores y Hosting</option>
+                            <option value="Bases de Datos">Bases de Datos</option>
+                            <option value="Contenedores">Contenedores y Kubernetes</option>
+                        </optgroup>
+                        <optgroup label="🔒 Ciberseguridad">
+                            <option value="Ciberseguridad">Ciberseguridad</option>
+                            <option value="Pentesting">Pentesting y Ethical Hacking</option>
+                            <option value="Backup y Recuperación">Backup y Recuperación</option>
+                            <option value="Protección de Datos">Protección de Datos (GDPR)</option>
+                            <option value="Monitoreo 24/7">Monitoreo 24/7</option>
+                        </optgroup>
+                        <optgroup label="🤖 Inteligencia Artificial y Datos">
+                            <option value="Inteligencia Artificial">Inteligencia Artificial</option>
+                            <option value="Chatbots">Chatbots y Asistentes</option>
+                            <option value="Machine Learning">Machine Learning</option>
+                            <option value="Big Data">Big Data</option>
+                            <option value="Business Intelligence">Business Intelligence</option>
+                            <option value="Automatización RPA">Automatización RPA</option>
+                            <option value="Visión por Computadora">Visión por Computadora</option>
+                        </optgroup>
+                        <optgroup label="🎨 Diseño y Experiencia">
+                            <option value="Diseño UX/UI">Diseño UX/UI</option>
+                            <option value="Branding">Branding e Identidad Visual</option>
+                            <option value="Diseño Gráfico">Diseño Gráfico</option>
+                            <option value="Motion Graphics">Motion Graphics</option>
+                            <option value="Modelado 3D">Modelado 3D</option>
+                        </optgroup>
+                        <optgroup label="📈 Marketing Digital">
+                            <option value="SEO">SEO y Posicionamiento</option>
+                            <option value="Publicidad Digital">Publicidad Digital</option>
+                            <option value="Redes Sociales">Redes Sociales</option>
+                            <option value="Email Marketing">Email Marketing</option>
+                            <option value="Analytics">Google Analytics</option>
+                        </optgroup>
+                        <optgroup label="🛠️ Soporte y Consultoría">
+                            <option value="Consultoría">Consultoría Tecnológica</option>
+                            <option value="Soporte Técnico">Soporte Técnico 24/7</option>
+                            <option value="Mantenimiento">Mantenimiento</option>
+                            <option value="Auditoría">Auditoría de Software</option>
+                            <option value="Capacitación">Capacitación y Formación</option>
+                            <option value="Transformación Digital">Transformación Digital</option>
+                        </optgroup>
+                        <optgroup label="🎮 Otros Servicios">
+                            <option value="Videojuegos">Desarrollo de Videojuegos</option>
+                            <option value="VR/AR">Realidad Virtual / Aumentada</option>
+                            <option value="Blockchain">Blockchain y Web3</option>
+                            <option value="IoT">IoT (Internet de las Cosas)</option>
+                            <option value="Impresión 3D">Impresión 3D</option>
+                        </optgroup>
+                        <optgroup label="✨ Personalizado">
+                            <option value="Otro">Otro (especificar en el mensaje)</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget"><i class="fas fa-dollar-sign"></i> Presupuesto estimado (Opcional)</label>
+                    <select id="budget">
+                        <option value="">-- Selecciona un rango --</option>
+                        <option value="Menos de $1,000 USD">Menos de $1,000 USD</option>
+                        <option value="$1,000 - $5,000 USD">$1,000 - $5,000 USD</option>
+                        <option value="$5,000 - $20,000 USD">$5,000 - $20,000 USD</option>
+                        <option value="$20,000 - $50,000 USD">$20,000 - $50,000 USD</option>
+                        <option value="Más de $50,000 USD">Más de $50,000 USD</option>
+                        <option value="A definir">A definir con el equipo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment-alt"></i> Describe tu proyecto</label>
+                    <textarea id="message" rows="5" placeholder="Cuéntanos qué necesitas, plazos, objetivos..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary btn-large" id="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== ANIMACIÓN DE ENVÍO DE CARTA ========== -->
+    <div id="letter-animation" class="letter-animation hidden">
+        <div class="letter-envelope">
+            <div class="letter-paper">
+                <i class="fas fa-envelope-open-text"></i>
+                <p>Enviando...</p>
+            </div>
+        </div>
+        <div class="letter-flight-path"></div>
+    </div>
+
+    <!-- ========== MODAL DE ÉXITO ========== -->
+    <div id="success-modal" class="success-modal hidden">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>¡SOLICITUD ENVIADA CON ÉXITO!</h2>
+            <div id="ai-response-box" class="ai-response-box">
+                <p id="ai-text"></p>
+            </div>
+            <p class="success-note">Un experto de TechNova Solutions te contactará en menos de 24 horas.</p>
+            <button class="btn-primary btn-large" onclick="closeSuccessModal()">
+                <i class="fas fa-thumbs-up"></i> Entendido
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo">
+                    <span class="logo-text">TECH<span class="logo-accent">NOVA</span></span>
+                </div>
+                <p>Soluciones tecnológicas sin límites.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="proyectos.html">Proyectos</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> contacto@technova.com</p>
+                <p><i class="fas fa-phone"></i> +57 300 000 0000</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechNova Solutions.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/ai-api.js"></script>
+    <script src="js/form-animation.js"></script>
+</body>
+</html>
