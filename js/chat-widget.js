@@ -228,6 +228,10 @@ function getFallbackResponse(msg) {
     }
     if (lower.includes('contacto') || lower.includes('asesor') || lower.includes('humano')) {
         return 'Perfecto 🙌. Ve a la sección Contacto y llena el formulario. Un experto te responderá en menos de 24h.';
+        
+    }
+     if (lower.includes('gracias') || lower.includes('ok') || lower.includes('vale')) {
+        return 'Estoy aca para ayudarte';
     }
     return 'Gracias 😊. ¿Qué servicio te interesa? También puedes contactarnos por WhatsApp o email.';
 }
